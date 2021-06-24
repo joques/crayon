@@ -12,3 +12,7 @@ discuss typical setup with environment and how to use the Pluto notebook
 ## Contents
 
 detailed content of the repo goes here
+
+## Collaborators
+
+list all collaborators to the project here
