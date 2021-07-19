@@ -10,9 +10,9 @@ This tutorial will focus on:
 
 ## Installation and documentation
 
-To install **Julia**, first go to the (downloads)[https://julialang.org/downloads] to download  and then follow the installation instructions based on your operating system. Note that the current stable version is v1.6 and that you can install on MacOS, Windows and Linux. If you wish, you can also download the source code and compile it.
+To install **Julia**, first go to the [downloads](https://julialang.org/downloads) to download  and then follow the installation instructions based on your operating system. Note that the current stable version is v1.6 and that you can install on MacOS, Windows and Linux. If you wish, you can also download the source code and compile it.
 
-Although we will provide a quick tutorial on Julia here to get you started, we strongly encourage you to visit the (documentation)[https://docs.julialang.org/en/v1/] page of the language to get more information about any extra questions you might have.
+Although we will provide a quick tutorial on Julia here to get you started, we strongly encourage you to visit the [documentation](https://docs.julialang.org/en/v1/) page of the language to get more information about any extra questions you might have.
 
 ## Julia Environment and Pluto Notebook
 
