@@ -22,4 +22,7 @@ detailed content of the repo goes here
 
 ## Collaborators
 
-list all collaborators to the project here
+This effort is contributed to by:
+1. Lameck Amugongo
+2. Victor Katoma
+3. José Quenum
