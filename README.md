@@ -1,7 +1,7 @@
 # crayon
-This repository contains a collection of training sessions around Data Analytics and machine learning in Julia
+This repository contains a collection of training sessions around Data Analytics and machine learning in **Julia**, a programming language gaining traction in complex system modelling, data science and machine learning. Julia has an easy, scripting syntax just like Python and R. However, it is fast and designed for parallelism.
 
-## Install Julia
+## Installation and documentation
 
 details on Julia installation will go here
 
