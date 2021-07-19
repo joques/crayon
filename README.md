@@ -38,7 +38,16 @@ With an environment set up, every time a new Pluto notebook is created for the p
 
 ## Contents
 
-detailed content of the repo goes here
+We will cover the following topics in this tutorial.
+1. Data Analytics
+	* Latent Class Analysis
+	* Data Profiling
+	* Model Fitting and Optimisation
+	* Big Data and AI
+1. Machine Learning
+	* Regression and Classification
+	* Regularisation
+	* Overview of Neural Networks
 
 ## Collaborators
 
