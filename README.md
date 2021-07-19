@@ -20,19 +20,19 @@ The examples in this tutorial will be implemented using **Pluto**, a reactive no
 
 To install Pluto, follow the steps below:
 
-1. launch Julia (type the command `julia`)
-1. switch to package mode by pressing the right square bracket on the keyboard
-1. type `add Pluto`
+1. Launch Julia (type the command `julia`);
+1. Switch to package mode by pressing the right square bracket on the keyboard;
+1. Type `add Pluto`.
 
-It is **highly** recommended to set up an environment for each project to avoid conflicting package versions in the global space in Julia. In so doing, all needed packages will be installed in the local environment and could be disposed of at some point in the future. In the remainder of this document, I am assuming that you have installed Julia and set up your path. If not, please check the following (link)[https://julialang.org/downloads] for downloading and (this one)[https://julialang.org/downloads/platform] for setting up Julia for your OS.
+Once the installation completes, leave the package mode and quit Julia.
 
-To create an environment, take the following steps:
-1. In your command-line terminal, change directory to the folder under which you wish to create the project folder.
-2. Execute the command `julia -e 'using Pkg;Pkg.generate("folder-name")'`. Windows users might have to replace the single quotes with double quotes and escape the inner ones.
+Setting up an environment for each project avoids conflicting package versions in the global space in Julia. All packages are installed in the local environment and could be disposed of at some point in the future. To create an environment, take the following steps:
 
-3. Once the command executes successfully, change directory to the newly created folder and run the command `julia --project=.` to run Julia with the local environment.
-4. Switch to package mode and add your packages.
-5. When completed, exit Julia.
+1. In your command-line terminal, change directory to the folder under which you wish to create the project folder
+1. Execute the command `julia -e 'using Pkg;Pkg.generate("folder_name")'`. Windows users might have to replace the single quotes with double quotes and escape the inner ones.
+1. Once the command executes successfully, change directory to the newly created folder and run the command `julia --project=.` to run Julia with the local environment.
+1. Switch to package mode and add your packages.
+1. When completed, exit Julia.
 
 With an environment set up, every time a new Pluto notebook is created for the project, save the notebook in the right folder and activate the environment at the beginning of the notebook.
 
