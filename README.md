@@ -1,5 +1,12 @@
 # crayon
-This repository contains a collection of training sessions around Data Analytics and machine learning in **Julia**, a programming language gaining traction in complex system modelling, data science and machine learning. Julia has an easy, scripting syntax just like Python and R. However, it is fast and designed for parallelism.
+This repository contains a collection of training sessions around Data Analytics and Machine Learning in **Julia**, a programming language gaining traction in complex system modelling, data science and machine learning. Julia has an easy, scripting syntax just like Python and R. However, it is fast and designed for parallelism.
+
+This tutorial will focus on:
+
+1. A general introduction to Julia
+2. Practical examples on:
+	* Data Analytics
+	* Machine Learning
 
 ## Installation and documentation
 
