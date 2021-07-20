@@ -34,11 +34,20 @@ Setting up an environment for each project avoids conflicting package versions i
 1. Switch to package mode and add your packages.
 1. When completed, exit Julia.
 
-With an environment set up, every time a new Pluto notebook is created for the project, save the notebook in the right folder and activate the environment at the beginning of the notebook. Note that creating an environment generates two configuration files `Project.toml` and `Manifest.toml`. We will demonstrate how to load the packages in a notebook with `Project.toml`.
+With an environment set up, every time a new Pluto notebook is created for the project, save the notebook in the right folder and activate the environment at the beginning of the notebook. Note that creating an environment generates two configuration files `Project.toml` and `Manifest.toml`.
+
+To start a notebook, take the following steps:
+1. Launch Julia (`julia`)
+1. Load and run Pluto (`using Pluto` followed by `Pluto.run()`)
+1. Copy and paste the URL of the notebook into your favorite browser
+
+Once the notebook is started, you must first save it in the correct folder. Then activate `Project.toml` as follows: `using Pkg` and `Pkg.activate("path\to\Project.toml")`.
 
 ## Contents
 
-We will cover the following topics in this tutorial.
+We will cover the following topics in this tutorial:
+
+1. Introduction to Julia
 1. Data Analytics
 	* Latent Class Analysis
 	* Data Profiling
