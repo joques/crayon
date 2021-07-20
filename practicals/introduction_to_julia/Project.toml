@@ -1,0 +1,10 @@
+name = "introduction_to_julia"
+uuid = "6394a65d-4c4f-4c10-a6a6-0a2d8d7ada74"
+authors = ["José G. Quenum <josum@icloud.com>"]
+version = "0.1.0"
+
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
