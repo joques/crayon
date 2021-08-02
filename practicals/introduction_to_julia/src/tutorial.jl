@@ -43,6 +43,14 @@ with_terminal() do
 end
 
 # ╔═╡ 34fbf191-f1fe-4a23-aca7-4b122383bd5a
+me = 6
+
+# ╔═╡ ec3d2abc-3b90-4b71-b261-cdab4b757aaf
+with_terminal() do
+ println(me)
+end
+
+# ╔═╡ 9a30f62e-fddb-40e9-87aa-a7227e171049
 
 
 # ╔═╡ Cell order:
@@ -57,3 +65,5 @@ end
 # ╠═b1e94cf4-6755-448a-b89c-e71aeada4631
 # ╠═65cd3fba-a2f5-43e2-b9d6-2d4837030f84
 # ╠═34fbf191-f1fe-4a23-aca7-4b122383bd5a
+# ╠═ec3d2abc-3b90-4b71-b261-cdab4b757aaf
+# ╠═9a30f62e-fddb-40e9-87aa-a7227e171049

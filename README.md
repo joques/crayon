@@ -26,7 +26,7 @@ To install Pluto, follow the steps below:
 
 Once the installation completes, leave the package mode and quit Julia.
 
-Setting up an environment for each project avoids conflicting package versions in the global space in Julia. All packages are installed in the local environment and could be disposed of at some point in the future. To create an environment, take the following steps:
+Setting up an environment for each project avoids conflicting package versions in the global space in Julia. All packages are installed in the local environment and could be disposed of at some point in the future. If you  are using the latest version (*0.15.1*) of Pluto, this functionality is offered by default. However, if you are using version *0.14.7* or older, you should take the following steps to create an  environment:
 
 1. In your command-line terminal, change directory to the folder under which you wish to create the project folder
 1. Execute the command `julia -e 'using Pkg;Pkg.generate("folder_name")'`. Windows users might have to replace the single quotes with double quotes and escape the inner ones.
