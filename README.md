@@ -34,6 +34,8 @@ Setting up an environment for each project avoids conflicting package versions i
 1. Switch to package mode and add your packages.
 1. When completed, exit Julia.
 
+For more information, check the [wiki page](https://github.com/fonsp/Pluto.jl/wiki).
+
 With an environment set up, every time a new Pluto notebook is created for the project, save the notebook in the right folder and activate the environment at the beginning of the notebook. Note that creating an environment generates two configuration files `Project.toml` and `Manifest.toml`.
 
 To start a notebook, take the following steps:
