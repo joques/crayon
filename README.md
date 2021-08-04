@@ -43,6 +43,8 @@ To start a notebook, take the following steps:
 1. Load and run Pluto (`using Pluto` followed by `Pluto.run()`)
 1. Copy and paste the URL of the notebook into your favorite browser
 
+Note that you can pass arguments to the run function. For example, to specify a different port number than the default one and prevent Pluto from opening the notebook in your favourite browser, you can type the command `Pluto.run(; port = 5549, launch_browser=false)`.
+
 Once the notebook is started, you must first save it in the correct folder. Then activate `Project.toml` as follows: `using Pkg` and `Pkg.activate("path\to\Project.toml")`.
 
 ## Contents
