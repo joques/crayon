@@ -67,6 +67,11 @@ var7 = 'a'
 # ╔═╡ 706dddec-956d-43db-8e39-c563886c1860
 δ = var7 + 33
 
+# ╔═╡ 4e31b8a8-3429-458d-856d-61262acf7a2e
+with_terminal() do
+	println("$δ")
+end
+
 # ╔═╡ d11732b0-5853-4c72-a736-a97323d3411d
 str1 = "Hello "
 
@@ -77,6 +82,11 @@ end
 
 # ╔═╡ 1316d942-11ce-4e6b-b3e0-d6f8a014647d
 str2 = str1 * "world"
+
+# ╔═╡ 02b7dbdb-3912-449d-9c1b-8a43f8bb90ca
+with_terminal() do
+	println(str2)
+end
 
 # ╔═╡ 57e7e954-f92a-4633-9b77-588b66c2fdc0
 var9 = :r1
@@ -149,6 +159,15 @@ arr6 = rand(3, 5)
 # ╔═╡ c050a61a-658f-4474-9c7f-02e15f434b01
 arr7 = 45:3:100
 
+# ╔═╡ 4f48ebe4-5a44-4e34-abe9-7f8336d2cc85
+arr7.start
+
+# ╔═╡ b51fc212-c932-4b80-a2d1-ddf99cb9fcf8
+arr7.stop
+
+# ╔═╡ 23d2858a-488d-43b6-b428-4928f39e39af
+arr7.step
+
 # ╔═╡ 9737c539-641c-4395-aba3-258e0dedf587
 length(arr7)
 
@@ -167,6 +186,14 @@ tu1 = (0.0, "greetings")
 # ╔═╡ 62607833-2b5b-4cf9-8322-5c2911e8ce79
 tu2 = (c1 = 60, c2 = 0.7)
 
+# ╔═╡ 50ddbd43-9309-42d2-8826-86d789863992
+function conc_tuple(eg1, eg2)
+	return (eg1[1], eg1[2], eg2[1], eg2[2])
+end
+
+# ╔═╡ 063cc11c-2e63-45fa-ab89-a7b11341e48c
+tu3 = conc_tuple(tu1, tu2)
+
 # ╔═╡ bb339b28-f5c5-4734-b244-7da976e73cda
 @show tu2[1]
 
@@ -179,11 +206,17 @@ md"### Dictionaries"
 # ╔═╡ c33db730-13e7-423f-89e1-9433e458ffef
 di1 = Dict{Symbol, Int64}(:q1 => 15, :q2 => 44)
 
+# ╔═╡ 32e3a5a8-4a47-452e-bcc4-f42f4c2f1f5c
+di1[:q1]
+
 # ╔═╡ e324e914-ef21-4285-96ca-3476bfef4f4f
 di2 = Dict(1 => "hello", 2 => "world", 3 => "everybody")
 
 # ╔═╡ 8628b0c0-adb0-4def-a283-a48701b20e41
 typeof(di2)
+
+# ╔═╡ 663fdc86-e78e-4eb6-951c-c92796d92d0d
+di2[2]
 
 # ╔═╡ a2a18810-30b6-4568-a1c6-0a20406a5f88
 md"### Complex Objects"
@@ -197,6 +230,9 @@ end
 
 # ╔═╡ 64478fa5-dccf-4991-a1d9-5d55d154cb1d
 st1 = Student("Thomas", :c1, [4.5, 3, 5, 5])
+
+# ╔═╡ ef9c7fad-009f-458a-8ebe-dfc1a5007691
+st1.name = "Kelly"
 
 # ╔═╡ 174538bf-c456-44ca-936a-a9a9abfb34bf
 @show st1.name
@@ -248,7 +284,7 @@ md"### Conditional evaluation"
 # ╔═╡ 3b95cd80-a77c-430b-b4ca-e1f7bfc1afd5
 begin
 	with_terminal() do
-		ts1 = 42
+		ts1 = 8
 		ts2 = 27
 		if ts1 < ts2
 			println("ts1 is less than ts2")
@@ -347,6 +383,12 @@ aggreg2(5,4)
 
 # ╔═╡ aa65b037-9188-4bf1-90b7-c3d950e606bc
 aggreg2([1,2,3,4])
+
+# ╔═╡ 052b7e76-3986-49d8-97b5-1d316d7c38f2
+aggreg2(5)
+
+# ╔═╡ a02bb1d5-87aa-4bbd-a937-1f24e46f311f
+
 
 # ╔═╡ 1ed16d96-6102-4e09-b5b0-fb3260fe2353
 aggreg2.([1,2,3,4])
@@ -803,9 +845,11 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═4e5e49b3-16aa-4ddb-913d-cb3e80b7ae06
 # ╠═4e247c38-32ed-4f37-9957-66927e0f9e5c
 # ╠═706dddec-956d-43db-8e39-c563886c1860
+# ╠═4e31b8a8-3429-458d-856d-61262acf7a2e
 # ╠═d11732b0-5853-4c72-a736-a97323d3411d
 # ╠═402abbed-fd9e-455b-910c-2c5b6f772206
 # ╠═1316d942-11ce-4e6b-b3e0-d6f8a014647d
+# ╠═02b7dbdb-3912-449d-9c1b-8a43f8bb90ca
 # ╠═57e7e954-f92a-4633-9b77-588b66c2fdc0
 # ╠═1954e6ee-0ff6-4215-90c8-c2e3968ebbb9
 # ╠═99adae4d-f33f-44d8-82a0-b2212339ff23
@@ -829,21 +873,29 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═0d5e1409-632c-4f0f-bdc0-2b95975b1a3f
 # ╠═d63ddedc-0e7c-4e50-91ef-50de78c015b3
 # ╠═c050a61a-658f-4474-9c7f-02e15f434b01
+# ╠═4f48ebe4-5a44-4e34-abe9-7f8336d2cc85
+# ╠═b51fc212-c932-4b80-a2d1-ddf99cb9fcf8
+# ╠═23d2858a-488d-43b6-b428-4928f39e39af
 # ╠═9737c539-641c-4395-aba3-258e0dedf587
 # ╠═ac5a7bb6-f7a8-4459-8d38-577c94684f3c
 # ╠═01fc5525-1d8d-4e29-8f36-b0d6efe9af7a
 # ╠═0ee2cbb7-16b9-4939-9b09-44bad525a79a
 # ╠═c444c0f4-50e6-4d4e-844c-2b61bf6763c6
 # ╠═62607833-2b5b-4cf9-8322-5c2911e8ce79
+# ╠═50ddbd43-9309-42d2-8826-86d789863992
+# ╠═063cc11c-2e63-45fa-ab89-a7b11341e48c
 # ╠═bb339b28-f5c5-4734-b244-7da976e73cda
 # ╠═e99a2fa4-6faf-4368-8db3-333d68d53c75
 # ╠═062db493-2016-4fd0-a59f-5f2b65a7af50
 # ╠═c33db730-13e7-423f-89e1-9433e458ffef
+# ╠═32e3a5a8-4a47-452e-bcc4-f42f4c2f1f5c
 # ╠═e324e914-ef21-4285-96ca-3476bfef4f4f
 # ╠═8628b0c0-adb0-4def-a283-a48701b20e41
+# ╠═663fdc86-e78e-4eb6-951c-c92796d92d0d
 # ╠═a2a18810-30b6-4568-a1c6-0a20406a5f88
 # ╠═142e066a-371b-4e5d-918f-782562d801a6
 # ╠═64478fa5-dccf-4991-a1d9-5d55d154cb1d
+# ╠═ef9c7fad-009f-458a-8ebe-dfc1a5007691
 # ╠═174538bf-c456-44ca-936a-a9a9abfb34bf
 # ╠═38bb47c5-b445-4f4f-84d4-acdfeb662628
 # ╠═dcdc3701-d9dd-4810-add0-5967fa106747
@@ -877,6 +929,8 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═aa65b037-9188-4bf1-90b7-c3d950e606bc
 # ╠═64087beb-9e31-4fff-93f9-dd411c4fcc54
 # ╠═e9b74832-f3d7-4625-bcb8-e5a7c28603e1
+# ╠═052b7e76-3986-49d8-97b5-1d316d7c38f2
+# ╠═a02bb1d5-87aa-4bbd-a937-1f24e46f311f
 # ╠═1ed16d96-6102-4e09-b5b0-fb3260fe2353
 # ╠═d64188e7-e733-4546-a9d7-50b727fbee15
 # ╠═0e95d1ef-d76a-4df5-a5f2-17e0c1e70077
